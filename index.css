@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #555;
+  --stand-out-color: #faec27;
+  --light-color: #f5f5f5;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  border: solid 0.2vw var(--stand-out-color);
+  color: var(--light-color);
+}
+li {
+  list-style: none;
+}
+li {
+  transition: all 0.5s;
+}
+li:hover {
+  transform: scale(1.1, 1.1);
+  color: transparent;
+  filter: blur(0.5px);
+}
+.strong-batman { /* for bolding in website */
+  color: var(--stand-out-color);
+  background-color: var(--secondary-color);
+}
+a {
+  text-decoration: none;
+  color: var(--stand-out-color);
+}
+a:hover {
+  color: var(--light-color);
+}
+
+/* !navigation bar!
+ appears on top - sticky.*/
+#navbar {
+  position: static;
+  font-size: 2vw;
+  max-height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 0.2vw var(--stand-out-color);
+  background-color: var(--primary-color);
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+}
+/* responsibility still need to be fixed: */
+
+/* Mobile screen*/
+/* Desktop screen */
+@media only screen and (min-width: 500px) {
+  .navbar {
+    font-size: 1.2vw;
+    height: 6vw;
+    width: 100vw;
+    padding: auto 0;
+    background-color: #eee;
+    justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+  }
+  .navbar__menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar__logo, .navbar__menu li {
+    padding: 0 1em;
+  }
+  .navbar__spcaer {
+    flex-grow: 2;
+    /* background-color: coral; */
+  }
+}
+@media only screen and (max-width: 499px) {
+  .navbar {
+      background-color: #eee;
+      height: 95vw;
+      width: 95vw;
+      font-size: 4.5vw;
+  }
+  .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+  }
+  .navbar li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .navbar__spcaer {
+      display: none;
+  }
+}
