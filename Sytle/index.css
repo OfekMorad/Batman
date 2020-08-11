@@ -14,6 +14,9 @@
 audio {
    max-height: 5vh; width: 25vw;
 }
+body {
+  background: var(--secondary-color);
+}
 .container {
   height: 100vh;
   max-width: 1400px;
@@ -22,7 +25,7 @@ audio {
   background-color: var(--primary-color);
   border: solid 0.2vw var(--stand-out-color);
   color: var(--light-color);
-  /* margin-bottom: 2vh; */
+  margin-bottom: 2vh;
 }
 li {
   list-style: none;
