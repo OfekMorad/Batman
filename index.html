@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="A site for Batman fan">
+  <meta name="description" content="A tribute site for Batman">
   <meta name="keywords" content="Batman, DC, Dark, Dark knight, Dark detective">
   <title>Batman</title>
-  <link rel="icon" href="./images/BatmanLogo4.png">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="BatmanLogo.ico">
+  <link rel="stylesheet" href="./Sytle/normalize.css">
+  <link rel="stylesheet" href="./Sytle/index.css">
 </head>
 <body>
 <!-- navbar -->
   <div id="navbar">
-    <div class="navbar__logo">
-      <a href="#"><img src="./images/BatmanLogo4.png" style="max-height: 14vh" alt="Batman"></a>
-    </div>
-
+    <figure class="navbar__logo">
+      <a href="#"><img src="./images/BatmanLogo.png" style="max-height: 14vh" alt="Batman"></a>
+    </figure>
     <div class="navbar__spacer">
-<!-- write: "<audio controls autoplay>"" to get an auto play for music -->
-      <audio controls style="max-height: 5vh; width: 25vw" autoplay>
+      <audio controls>       <!-- autoplay -->
         <source src="./Music/BatmanTheAnimatedSeries.mp3" type="audio/mpeg">
       </audio>
     </div>
@@ -28,7 +27,7 @@
         <ul>
             <li><a href="#"><h3>Home</h3></a></li>
             <li><a href="#About"><h3>About</h3></a></li>
-            <li><a href="#WhySOSerious"><h3>Why SO Serious?</h3></a></li>
+            <li><a href="#WhySOSerious"><h3>Why SO<br>Serious?</h3></a></li>
             <li style="margin-right: 10px"><a href="#Bonus"><h3>Bonus</h3></a></li>
         </ul>
     </div>
@@ -42,25 +41,33 @@
     <p>
       This site is dedicated to my childhood hero, <span class="strong-batman">Batman</span>.
     </p>
-    <img src="./images/BatmanBegins.jfif" style="width: 50vh" alt="Batman">
+    <figure>
+      <img src="./images/BatmanBegins.jfif" style="width: 50vh" alt="Batman">
+    </figure>
   </div>
   
   <hr>
 <!-- second slide -->
   <div id="WhySOSerious" class="container" style="display: flex; flex-direction:column">
     <h3 style="color: brown">Why SO Serious?</h3>
-    <img src="./images/WhySoSerious.jfif" style="width: 40vh" alt="Batman">
+    <figure>
+      <img src="./images/WhySoSerious.jfif" style="width: 40vh" alt="Batman">
+    </figure>
     <p>
       Not allways Batman was so dark and gloomy. In fact, there was a time (1966) he
        used a <strong>shark repellent spray</strong> to defeat a shark, but of course!<br>
-    <img src="./images/batman-shark-repellent-1966-movie.jpg" style="height: 30vh" alt="Batman shark repellent (1966)">
+    <figure>
+      <img src="./images/batman-shark-repellent-1966-movie.jpg" style="height: 30vh" alt="Batman shark repellent (1966)">
+    </figure>
     </p>
     <p>
       In that other time, Batman had a credit card with a logo of Batman himself.
       Imagine that: Batman goes to a bank full-custemed, and ask the teller for a special
       credit card logo. Also the the date of expiration was set to FOREVER, beacuse you know
       Wayne... And also after the name of the movie <span class="strong-batman"> Batman Forever (1997) </span>.<br>
-      <img src="./Images/BatmanForeverCreditCard1997.jpg" style="height: 30vh" alt="Batman Forever (1997)">
+      <figure>
+        <img src="./Images/BatmanForeverCreditCard1997.jpg" style="height: 30vh" alt="Batman Forever (1997)">
+      </figure>
     </p>
   </div>  
   
